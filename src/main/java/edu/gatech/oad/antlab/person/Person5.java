@@ -31,8 +31,8 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 		String result = "";
-		String temp = input.charAt(0) + input.charAt(1) + "";
-		for (int i = 2; i < input.length; i++) {
+		String temp = input.substring(0,2);;
+		for (int i = 2; i < input.length(); i++) {
 			result += input.charAt(i);
 		}
 		result += temp;
