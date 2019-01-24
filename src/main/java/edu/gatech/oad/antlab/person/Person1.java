@@ -31,7 +31,24 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+		String temp = "";
+		if(input.length() == 0){
+			return null;
+		} else if(input.length() == 1) {
+			return input;
+		} else if (input.length() == 2) {
+			String swap = "";
+			swap = swap.concat(input.substring(1));
+			swap = swap.concat(input.substring(0,1));
+			return swap;
+		} else {
+			//(input.length() > 2)
+			String front = input.substring(0, 2);
+			temp = input.substring(2);
+			temp = temp.concat(front);
+			temp = temp.concat(front);
+			return temp;
+		}
 	}
 	
 	/**
